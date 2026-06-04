@@ -7,8 +7,13 @@ Exercício 1.3: Nome do arquivo renomeado para "domicilio". Ocorreu o erro "Modu
   Adicionei o "moradores = domicilios['A01npessoas'].tolist()", mas desisti.
   Utilizei "col_maior_num_moradores = domicilios['A01npessoas'].max()
   id_maior_num_moradores = domicilios[domicilios['A01npessoas'] == col_maior_num_moradores].index[1]"
+  e também "col_maior_num_criancas = domicilios['A01ncriancas'].max()
+id_maior_num_criancas = domicilios[domicilios['A01ncriancas'] == col_maior_num_criancas].index[0]
+print(f"O domicílio {id_maior_num_criancas} possui a maior quantidade de crianças identificada, que foi {col_maior_num_criancas}.")"
   Pretendo utilizar outras técnicas posteriormente, criando funções etc.
-
   Por fim, a resposta foi: "O domicílio 18847 possui a maior quantidade de moradores identificada, que foi de 14." 
                                                             e, logo abaixo,
                            "O domicílio 5107 possui a maior quantidade de crianças identificada, que foi de 11."
+
+Exercício 1.4: Ao inserir elementos da "idade_calculada" diferentes de 99999 na variável "adultos", a resposta "Não se aplica" é retirada da análise, pois no dicionário de dados 99999 = "Não se aplica".
+  Visto que cada linha corresponde à uma pessoa e há 69542 linhas 
