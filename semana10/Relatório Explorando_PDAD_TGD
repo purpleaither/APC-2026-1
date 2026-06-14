@@ -15,12 +15,16 @@ print(f"O domicílio {id_maior_num_criancas} possui a maior quantidade de crian�
                                                             e, logo abaixo,
                            "O domicílio 5107 possui a maior quantidade de crianças identificada, que foi de 11."
 
-Exercício 1.4: Ao inserir elementos da "idade_calculada" diferentes de 99999 na variável "adultos", a resposta "Não se aplica" é retirada da análise, pois no dicionário de dados 99999 = "Não se aplica".
-  Visto que cada linha corresponde à uma pessoa e há 69542 linhas 
+Exercício 1.4: Ao inserir elementos da "idade_calculada" diferentes de 99999 na variável "adultos", a resposta "Não se aplica" é retirada da análise, pois no dicionário de dados 99999 = "Não se aplica" (apesar de que tal valor não ser utilizado para idades e sim para outras coisas).
+  Visto que cada linha corresponde à uma pessoa e há 69542 linhas, então todas elas tem a idade declarada.
 
 Exercício 2.1: Os resultados obtidos foram "Total de moradores com idade declarada: 69542, Soma das idades: 2518823, Média de idade: 36.2 anos"
   O mais velho tem 107 anos e o mais novo (que possui mais de 0 anos) tem 1 ano.
 
-Exercício 2.2: Dificuldade ao identificar a escolaridade mais comum de forma correta.
+Exercício 2.2: O nível de escolaridade mais comum é Fundamental incompleto com 17680 moradores.
 
-2.3: nao fiz a questao
+Exercício 2.3: As duas regiões não possuem a mesma quantidade de moradores, sendo a região de São Sebastião a que possui maior número de mais moradores.
+
+Exercício 2.4: A média das rendas dos moradores é de R$ 3541.10.
+
+Exercício 3.1: 
