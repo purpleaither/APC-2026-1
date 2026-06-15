@@ -28,3 +28,14 @@ Exercício 2.3: As duas regiões não possuem a mesma quantidade de moradores, s
 Exercício 2.4: A média das rendas dos moradores é de R$ 3541.10.
 
 Exercício 3.1: O algoritmo realizou 1191213937 trocas.
+
+Exercício 3.2: O código foi modificado do maior para o menor e a escolaridade foi adicionada.
+
+Exercício 3.3: "print("Regiões Administrativas (ordem alfabética):")
+  for ra in ras:
+      filtro_ra = moradores["localidade"] == ra["codigo"]
+      total = filtro_ra.sum()
+      media_idade = moradores.loc[filtro_ra & (moradores["idade_calculada"] != 99999), "idade_calculada"].mean()
+      print(f"  {ra['nome']} (cód. {ra['codigo']}): {total} moradores | Média de idade: {media_idade:.1f} anos")"
+
+
