@@ -38,4 +38,17 @@ Exercício 3.3: "print("Regiões Administrativas (ordem alfabética):")
       media_idade = moradores.loc[filtro_ra & (moradores["idade_calculada"] != 99999), "idade_calculada"].mean()
       print(f"  {ra['nome']} (cód. {ra['codigo']}): {total} moradores | Média de idade: {media_idade:.1f} anos")"
 
+Exercício 3.4: Eu imaginei que esses algoritmos funcionam como se eu estivesse organizando um baralho na minha mão para tentar entender cada uma das ordenações.
+  Notei que o Bubble Sort e o Selection Sort, pelo menos da forma como escrevi no meu código, são extremamente metódicos e não têm a capacidade de perceber o panorama geral. 
+  Eles não conseguem notar se a minha lista já está arrumada. Por isso, se eu entregar as cartas já na ordem certinha ou totalmente de trás para frente, percebi que não faz a menor diferença.
+  Eles vão fazer exatamente a mesma quantidade de comparações, conferindo posição por posição até o final, só para cumprir a regra à risca. A contagem de checagens deles simplesmente não muda em nenhum dos dois cenários.
+  Já o Insertion Sort me pareceu bem mais esperto, pois ele se adapta à situação que eu entrego. Se a lista já estiver toda ordenada, ele vai puxar uma carta, olhar para a anterior e ver que a atual já é maior, passando para a próxima na mesma hora. 
+  Nesse cenário, vi que o número de comparações diminui e o trabalho termina super rápido.
+  Por outro lado, se a lista estiver totalmente ao contrário, do maior para o menor, eu acabo entregando para ele o pior cenário possível. Como a lógica dele é pegar uma carta nova e ir comparando com todas as anteriores para arrastá-la até o começo da fila, uma lista invertida obriga o algoritmo a fazer o caminho mais longo e doloroso todas as vezes. 
+  Nesse caso de lista invertida, a contagem de comparações dele explode e vai lá para o teto, dando tanto trabalho de processamento quanto os outros dois.
 
+Exercício 4.1: Utilizei o try except para verificar se o relatorio esta funcionando ou nao, além de ter adiicionado ao relatorio a contagem por RA.
+
+Exercício 4.2: 
+
+Exercício 4.3:
