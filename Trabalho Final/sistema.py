@@ -16,7 +16,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Importa as funções analíticas e de tratamento dos nossos módulos personalizados.
+# Importa as funções analíticas e de tratamento dos módulos personalizados.
 from util.carregar import carregar_dados
 from util.calcular import (
     calcular_cobertura_plano_geral, 
@@ -54,7 +54,7 @@ class SistemaSaudeGUI:
 
     def montar_interface(self):
         """Constrói e posiciona todos os elementos visuais (rótulos, filtros, botões e área gráfica) dentro da janela."""
-        # --- BARRA LATERAL (PAINEL DE CONTROLE) ---
+        # BARRA LATERAL (PAINEL DE CONTROLE) 
         # Cria um contêiner lateral para agrupar os filtros e estatísticas à esquerda.
         self.frame_lateral = tk.Frame(self.janela, width=250, relief=tk.RIDGE, bd=2)
         self.frame_lateral.pack(side=tk.LEFT, fill=tk.Y, padx=10, pady=10)
@@ -113,7 +113,7 @@ class SistemaSaudeGUI:
         )
         self.btn_exportar.pack(fill=tk.X, padx=5, pady=5)
 
-        # --- ÁREA PRINCIPAL (PAINEL DE EXIBIÇÃO) ---
+        # ÁREA PRINCIPAL (PAINEL DE EXIBIÇÃO)
         # Contêiner que abriga os painéis gráficos e informativos à direita.
         self.frame_principal = tk.Frame(self.janela)
         self.frame_principal.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=10, pady=10)
@@ -163,7 +163,7 @@ class SistemaSaudeGUI:
         )
         self.btn_aba_comparacao.pack(side=tk.LEFT, padx=5)
 
-        # --- CONTEÚDO DAS ABAS ---
+        # CONTEÚDO DAS ABAS
         # 1. Aba de Gráficos (Matplotlib)
         self.frame_grafico = tk.Frame(self.frame_principal)
         self.frame_grafico.pack(fill=tk.BOTH, expand=True)
