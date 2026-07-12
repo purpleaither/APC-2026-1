@@ -1,0 +1,6 @@
+# Biblioteca para manipulação e tratamento das planilhas de dados.
+pandas
+# Biblioteca para criação e plotagem dos gráficos na interface.
+matplotlib
+# Biblioteca para suporte na leitura de arquivos do Excel.
+openpyxl
