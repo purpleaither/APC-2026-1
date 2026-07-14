@@ -24,7 +24,7 @@ from util.calcular import (
     calcular_saude_por_renda,
     calcular_estatisticas_gerais
 )
-from util.exportar import exportar_tabela_csv
+from util.exportar import exportar_para_txt
 
 
 class SistemaSaudeGUI:
