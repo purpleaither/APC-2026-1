@@ -454,23 +454,23 @@ class SistemaSaudeGUI:
         self.caixa_texto.insert(tk.END, texto_out)
 
     def acao_exportar_dialogo(self):
-        """Abre uma caixa de diálogo para salvar a base filtrada em um arquivo CSV."""
+        """Abre uma caixa de diálogo para salvar a base filtrada em um arquivo TXT."""
         if self.df_filtrado is None:
             messagebox.showwarning("Aviso", "Nenhum dado filtrado disponível para exportar.")
             return
 
         # Abre a caixa de diálogo padrão do sistema operacional para escolha do caminho do arquivo.
         caminho_arquivo = filedialog.asksaveasfilename(
-            defaultextension=".csv",
-            filetypes=[("Arquivo CSV", "*.csv"), ("Todos os arquivos", "*.*")],
+            defaultextension=".txt",
+            filetypes=[("Arquivo TXT", "*.txt"), ("Todos os arquivos", "*.*")],
             title="Salvar Microdados Filtrados"
         )
 
         if not caminho_arquivo:
             return
 
-        # Grava os dados filtrados no formato CSV.
-        exportar_tabela_csv(self.df_filtrado, caminho_arquivo)
+        # Grava os dados filtrados no formato TXT.
+        exportar_para_txt(self.df_resultado, "resultados.txt")
         messagebox.showinfo("Exportação Concluída", f"Os dados foram salvos em '{caminho_arquivo}' com sucesso!")
 
 
