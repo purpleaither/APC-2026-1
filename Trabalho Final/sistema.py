@@ -36,7 +36,7 @@ class SistemaSaudeGUI:
         self.janela = janela_principal
         
         # Define o título que aparece na barra superior da janela do aplicativo.
-        self.janela.title("Explorador de Saúde e Renda - PDAD 2024 (Recorte C)")
+        self.janela.title("Explorador de Saúde e Renda - PDAD 2024 (Recorte C) - Feito por Thayná Gonçalves Dutra")
         
         # Configura o tamanho da janela para acomodar os gráficos e filtros de forma legível.
         self.janela.geometry("950x700")
